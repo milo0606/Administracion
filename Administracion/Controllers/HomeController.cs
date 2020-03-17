@@ -12,8 +12,24 @@ namespace Administracion.Controllers
         {
             return View();
         }
+        public ActionResult Cliente()
+        {
+            return View();
+        }
 
-        public ActionResult About()
+        public ActionResult ModoDePago()
+        {
+            return View();
+        }
+        public ActionResult Proveedor()
+        {
+            return View();
+        }
+        public ActionResult Factura()
+        {
+            return View();
+        }
+        public ActionResult Producto()
         {
             ViewBag.Message = "Your application description page.";
 

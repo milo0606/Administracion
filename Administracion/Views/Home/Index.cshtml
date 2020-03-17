@@ -1,31 +1,89 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    <LINK REL=StyleSheet HREF="Site.css" TYPE="text/css" MEDIA=screen>
 }
+<div class="formulario">
+    <center>
+        <label for="Nombre">Nombre</label>
+        <input type="text" class="form-control" id="Nombre" />
+        <br />
+        <br />
+        <label for="Apellido">Apellido</label>
+        <input type="text" class="form-control" id="apelllido" />
+        <br />
+        <br />
+        <label for="telefono"> telefono</label>
+        <input type="text" class="form-control" id="telefono" />
+        <br />
+        <br />
+        <label for="fecha"> Fecha</label>
+        <input type="date" class="form-control" id="fecha" />
+        <br />
+        <br />
+        <label for="cantidad">Cantidad</label>
+        <input type="text" class="form-control" id="cantidad" />
+        <br />
+        <br />
+        <label for="Precio"> Precio</label>
+        <input type="text" class="form-control" id="precio" />
+        <br />
+        <br />
+        <label for="Categoria"> Categoria</label>
+        <input type="text" class="form-control" id="Costounitario" />
+        <br />
+        <br />
+        <label for="Total"> Total</label>
+        <input type="text" class="form-control" disabled id="total" />
+        <br />
+        <br />
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="guardar">
+            Generar factura
+        </button>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title  label label-success" id="exampleModalLabel">IMPRIMIR FACTURA</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <b> Nombre: </b> Emilio
+                        <hr />
+                        <br />
+                        <b>Apellido: </b> De los santos
+                        <hr />
+                        <br />
+                        <b>Telefono:</b> 809-236-5684
+                        <hr />
+                        <br />
+                        <b>Fecha:</b> 20 marzo 2020
+                        <hr />
+                        <br />
+                        <b>Cantidad:</b> 20
+                        <hr />
+                        <br />
+                        <b>Precio:</b> 50
+                        <hr />
+                        <br />
+                        <b>Categoria:</b> Hogar
+                        <hr />
+                        <br />
+                        <b>Total:</b>5600
+                        <hr />
+                        <br />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Imprimir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger" id="cancelar">Cancelar</button>
+    </center>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
 </div>
